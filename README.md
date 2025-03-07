@@ -6,6 +6,6 @@ This **is** QuickPwn (and WinPwn) itself but functions in a more, modern compute
 Supports MacOS and Linux.
 
 # credits
-<img src="kittehs.jpg" align="right" width="300px" title="i will kill you tonight. you can't do anything else.">
+<img src="kittehs.jpg" align="right" width="250px" title="i will kill you tonight. you can't do anything else.">
 
 - iPhone Dev Team, in general
