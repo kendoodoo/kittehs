@@ -5,6 +5,8 @@ This **is** QuickPwn (and WinPwn) itself but functions in a more, modern compute
 
 Supports MacOS and Linux.
 
+Writeup of kittehs: [ken's blog](https://blog.kentest.net/post/437875645794716424)
+
 # compatible with
 - iPod touch 1
 - ~~iPod touch 2~~ (probably no)
