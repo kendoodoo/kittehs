@@ -8,8 +8,8 @@ Supports MacOS and Linux.
 # compatible with
 - iPod touch 1
 - ~~iPod touch 2~~ (probably no)
-- ~~iPhone 2G~~
-- ~~iPhone 3G~~
+- ~~iPhone 2G~~ (baseband shenanigans, not now)
+- ~~iPhone 3G~~ (baseband shenanigans, not now)
 
 # credits
 <img src="kittehs.jpg" align="right" width="250px" title="i will kill you tonight. you can't do anything else.">
