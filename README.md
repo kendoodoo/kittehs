@@ -5,6 +5,11 @@ This **is** QuickPwn (and WinPwn) itself but functions in a more, modern compute
 
 Supports MacOS and Linux.
 
+# compatible with
+- iPod touch 1
+- ~~iPhone 2G~~
+- ~~iPhone 3G~~
+
 # credits
 <img src="kittehs.jpg" align="right" width="250px" title="i will kill you tonight. you can't do anything else.">
 
