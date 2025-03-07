@@ -7,6 +7,7 @@ Supports MacOS and Linux.
 
 # compatible with
 - iPod touch 1
+- ~~iPod touch 2~~ (probably no)
 - ~~iPhone 2G~~
 - ~~iPhone 3G~~
 
