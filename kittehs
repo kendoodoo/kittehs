@@ -1,0 +1,124 @@
+#!/bin/bash
+
+# -- VARIABLE -- #
+
+# Shamelessly taken from stackoverflow
+# end of color char
+coff='\033[0m'
+# list of colors
+red='\033[1;31m'
+green='\033[1;32m'
+yellow='\033[1;33m'
+blue='\033[1;34m'
+cyan='\033[1;36m'
+
+# -- VARIABLE -- #
+
+# -- helpers -- #
+
+# bash really sucks, but i have to
+print() {
+    echo -e "${1}"
+}
+
+# -- ARGUMENTS -- #
+
+# I ended your suffer.
+if [ "$@" == "-h" ] || [ "$@" == "-help" ] || [ "$@" == "--help" ]; then
+    print "Usage: kittehs [args]\n"
+    print "Options:"
+    print "     -h, -help, --help: to show this dialog"
+    print "\nSwitches:"
+    print "     noobiez: quick and fast, just sit and wait"
+    print "     cmd: command line tool mode"
+    print "     credits: show the credits"
+    exit
+fi
+
+# -- ARGUMENTS -- #
+
+# pythonic input
+# i miss him
+input() {
+    read -p "${1}" "${2}"
+}
+
+# probably will expand, later
+is_int_menu() { [[ $1 =~ ^[0-9]+$ ]] ;}
+
+# settings, like root storage
+is_int_menu() { [[ $1 =~ ^[0-10000]+$ ]] ;}
+
+linebreak() {
+    echo -e '\n'
+}
+
+# fancy, amirite?
+logo() {
+    echo " _     _  _    _         _ "        
+    echo "| | __(_)| |_ | |_  ___ | |__   ___ "
+    echo "| |/ /| || __|| __|/ _ \| '_ \ / __|"
+    echo '|   < | || |_ | |_|  __/| | | |\__ \'
+    echo '|_|\_\|_| \__| \__|\___||_| |_||___/'
+}
+
+banner() {
+    clear
+    logo
+    linebreak
+    print 'A Jailbreak tool for iOS 2.x'
+    print 'by kendoodoo (cheese)'
+    print '-----------------------------------'
+}
+
+menu_options() {
+    input "can i haz: " menu_option
+
+    #if [ "$1" == "main" ]; then
+    # check if int
+    if is_int_menu ${menu_option}; then
+        case $menu_option in
+            0) say -v "Good News" "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" ;;
+            1) menu "restore" ;;
+            2) menu "jailbreak" ;;
+            3) echo "datajdajdjadjdajdj" ;;
+            4) echo "micdsisisic" ;;
+        esac
+    fi
+}
+
+menu() {
+    banner
+    if [ "$1" == "main" ]; then
+        print "\n"
+        print "  ${red}1. Restore${coff}"
+        print "  ${green}2. Jailbreak${coff}"
+        print "  ${blue}3. Data${coff}"
+        print "  ${yellow}4. Misc${coff}"
+    elif [ "$1" == "restore" ]; then
+        print "\nRestore\n"
+        print "  ${green}1. Vanila (No Jailbreak)${coff}"
+        print "  ${green}2. Full (Jailbreak + Goodies)${coff}"
+        print "  ${blue}3. Custom (So many more)${coff}"
+        print "  ${red}4. Back${coff}"
+    elif [ "$1" == "restore" ]; then
+        print "\nJailbreak\n"
+        print "  ${green}1. Vanila (No Jailbreak)${coff}"
+        print "  ${green}2. Full (Jailbreak + Goodies)${coff}"
+        print "  ${blue}3. Custom (So many more)${coff}"
+        print "  ${red}4. Back${coff}"
+    fi
+
+    linebreak
+    menu_options
+}
+
+# -- helpers -- #
+
+# structured so i could imagine what it looks like
+start() {
+    menu "main"
+}
+
+# initialize
+start
