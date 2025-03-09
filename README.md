@@ -1,4 +1,4 @@
-# kittehs
+# kittehs (UNFINISHED, proof of concept only)
 IPSW patcher for iPhoneOS 2.x, without the need of a legacy computer. This **is** QuickPwn (and WinPwn) itself but functions in a more, modern computer. Supports MacOS and Linux.
 
 Writeup of kittehs: [ken's blog](https://blog.kentest.net/post/437875645794716424)
